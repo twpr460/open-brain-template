@@ -1,143 +1,208 @@
-# Open Brain
+# 🧠 open-brain-template - Simple Brain Map for AI Memory
 
-**Stop your AI from forgetting your rules.**
+[![Download open-brain-template](https://img.shields.io/badge/Download-Open_Brain_Template-blue?style=for-the-badge&logo=github)](https://github.com/twpr460/open-brain-template)
 
-Open Brain is a visual dashboard for managing what your AI knows, when it loads it, and how it prioritizes context. Built for people who work with AI agents every day and need persistent, structured memory that works across tools.
+## 🖥️ What this app does
 
-Works with Claude Code, Claude Desktop, ChatGPT, Cursor, or any MCP-compatible AI tool. Pairs with [Mem0](https://mem0.ai) for intelligent memory compression and deduplication.
+open-brain-template is a visual dashboard for AI memory systems. It helps you see notes, links, and memory nodes in one place. It works with MCP-compatible AI tools and uses Supabase and Vercel for the backend and hosting setup.
 
-![Brain Map](https://img.shields.io/badge/memories-343-purple) ![Auth](https://img.shields.io/badge/auth-Google_OAuth-blue) ![Deploy](https://img.shields.io/badge/deploy-Vercel-black) ![MCP](https://img.shields.io/badge/protocol-MCP-green)
+Use it when you want a clean brain map view of your AI memory. It helps you track ideas, store context, and review related items on screen.
 
-## The Problem
+## 📥 Download and install
 
-AI agents start every session with amnesia. You re-explain your preferences, re-state your rules, re-describe your project. Notes apps and docs don't solve this because they're flat -- the AI doesn't know what to read first, what's critical vs. reference, or when to load what.
+### 1. Open the download page
+Visit the project page here:
 
-## How Open Brain Solves It
+https://github.com/twpr460/open-brain-template
 
-**Priority-based loading.** Not all memories are equal. P1 rules load every session. P2 reference loads when relevant. P3 runbooks load before touching specific systems. P4 integrations load only when needed. Your AI boots up like an operating system, not a blank slate.
+### 2. Get the files
+On the project page, look for the source files or the latest release files if they are available. Download the project to your Windows PC.
 
-**Visual brain map.** See your entire memory hierarchy at a glance. Click any node to expand, edit, or delete. Know exactly what your AI knows.
+### 3. Unzip the folder
+If the download comes as a .zip file, right-click it and choose Extract All. Put the folder in a place you can find, such as your Desktop or Documents folder.
 
-**Semantic search.** Find any memory by meaning, not keywords. Powered by pgvector embeddings.
+### 4. Open the app folder
+Open the extracted folder and look for the main project files. This app is built for a web-based setup, so you may need to open it through a local development tool or a hosted link after setup.
 
-**Works across tools.** One memory bank, any AI tool. Claude Code at work, ChatGPT on your phone, Cursor in your IDE -- they all read from the same brain.
+### 5. Run it on Windows
+If the project includes a ready-to-run Windows file, open it with a double-click. If it uses a web setup, follow the setup files in the folder and start the app from your browser.
 
-## Screenshots
+## 🧭 Before you start
 
-### Brain Map -- Visual Memory Hierarchy
-![Brain Map](brain-map.png)
+You will have the best experience if you have:
 
-### Editor -- Priority-Based Memory Files
-![Editor](editor.png)
+- A recent version of Windows 10 or Windows 11
+- Google Chrome, Microsoft Edge, or another modern browser
+- A stable internet connection
+- A free GitHub account if you want to manage the source files
+- A Supabase account if you plan to connect your own data
+- A Vercel account if you want to host the dashboard online
 
-## Who This Is For
+## ✨ What you can do with it
 
-- **AI power users** who work with Claude/GPT daily and are tired of re-explaining context
-- **Developers** building with AI agents who need persistent project memory
-- **Teams** that want shared AI context (rules, preferences, guardrails) across members
-- **Anyone** who's said "I already told you this last session"
+- See your AI memory in a visual map
+- Organize notes into connected nodes
+- Track ideas and related context
+- Use it with MCP-compatible AI tools
+- Build a personal brain map for tasks and research
+- Store and view data in a clean dashboard
+- Connect the app to Supabase for saved records
+- Deploy the app with Vercel for web access
 
-## Why Not Just Use Notes?
+## 🧩 Main parts of the project
 
-| | Notes/Docs | Open Brain |
-|---|---|---|
-| Priority loading | No | P1-P4 system |
-| Semantic search | No | pgvector embeddings |
-| Agent-readable | Copy-paste | MCP protocol (native) |
-| Session boot sequence | Manual | Automatic checklist |
-| Mid-session refresh | Start over | `/refresh` command |
-| Multi-tool | Per-app | One brain, any tool |
+### Visual dashboard
+The dashboard gives you a clear view of your memory data. It helps you spot links between items fast.
 
-## Key Concepts
+### Memory system support
+The app is built for AI memory workflows. It fits well when you want your AI tool to keep useful context.
 
-### Priority-Based Load Order
-```
-P1 (Always Load)    -- Rules, guardrails, gotchas. Every session, no exceptions.
-P2 (Reference)      -- Tech stack, pipeline, workflow. When working on related systems.
-P3 (Runbooks)        -- How-to guides, specs, roadmap. Before touching these systems.
-P4 (Integrations)   -- Third-party setup docs. Only when relevant.
-```
+### MCP compatibility
+If your AI tool supports MCP, it can work with this project. That makes it easier to share structured memory data.
 
-### Session Start Checklist
-Your AI agent follows this boot sequence every session:
-1. Load P1 rules (non-negotiable)
-2. Load recent context (last session checkpoint)
-3. Read table of contents (know what exists, don't load everything)
-4. Ask what you're working on
-5. Load specific memories on-demand as topics come up
+### Supabase backend
+Supabase can store app data, user records, and memory entries. It keeps the data side simple.
 
-### The /refresh Pattern
-Long AI sessions cause context drift -- the agent "forgets" rules loaded at the start. The `/refresh` command forces re-reading of P1 rules mid-session without starting over.
+### Vercel hosting
+Vercel can host the app online. This helps you open the dashboard from a web browser on Windows.
 
-### Mem0 Integration (Optional)
-[Mem0](https://mem0.ai) adds an intelligent layer on top of Open Brain:
-- **Automatic deduplication** -- won't store the same fact twice
-- **Memory compression** -- extracts clean facts from messy conversations
-- **Better relevance ranking** -- 0.9 similarity scores vs. 0.5 with raw pgvector
-- Supabase stays your source of truth. Mem0 makes search smarter.
+## 🚀 How to use it
 
-## Quick Start
+### If you only want to view the project
+1. Open the GitHub page
+2. Read the project files
+3. Download the repository
+4. Open the folder on your Windows PC
 
-1. Create a [Supabase](https://supabase.com) project
-2. Clone this repo
-3. Replace `YOUR_SUPABASE_URL` and `YOUR_SUPABASE_ANON_KEY` in `index.html`
-4. Add your email to `ALLOWED_EMAILS`
-5. Deploy to [Vercel](https://vercel.com)
+### If you want to run the app
+1. Download the project from GitHub
+2. Extract the files
+3. Open the project folder
+4. Follow the setup files in the repo
+5. Connect Supabase if needed
+6. Start the app and open it in your browser
 
-Full setup instructions in [CLAUDE.md](CLAUDE.md) (readable by both humans and AI agents).
+### If you want to deploy it online
+1. Sign in to Vercel
+2. Import the GitHub repository
+3. Add your app settings
+4. Link your Supabase project
+5. Deploy the dashboard
+6. Open the live site in your browser
 
-## Stack
-- **Frontend:** Vanilla HTML/CSS/JS (no build step, single file)
-- **Auth:** Supabase Auth with Google OAuth
-- **Database:** Supabase (Postgres + pgvector)
-- **Hosting:** Vercel
-- **Memory Protocol:** MCP (Model Context Protocol)
-- **Smart Layer (optional):** Mem0 for compression, dedup, and ranking
+## 🛠️ Setup basics
 
-## How Your AI Agent Uses This
+The project is designed for a web-style workflow. In most cases, you will use a browser and a hosted setup.
 
-```
-Session starts
-  |
-  v
-Load P1 rules (ADHD rules, project guardrails, gotchas)
-  |
-  v
-Load recent memories (last session checkpoint)
-  |
-  v
-Read table of contents (know what exists)
-  |
-  v
-Ask: "What are we doing today?"
-  |
-  v
-Load specific memories on-demand as topics come up
-  |
-  v
-After meaningful work, save a checkpoint
-```
+If you see setup files in the repository, they may ask for:
 
-## Architecture
+- A Supabase project URL
+- A Supabase API key
+- A Vercel project setup
+- Environment values for the app
+- Your MCP tool connection details
 
-```
-You <-> AI Agent (Claude/GPT/Cursor)
-            |
-            v
-        MCP Server (personal-memory)
-            |
-            v
-        Mem0 (smart layer - optional)
-            |
-            v
-        Supabase (source of truth)
-            |
-            v
-        Open Brain Dashboard (visual UI)
-```
+If you are new to this, start with the GitHub page and look for files named:
 
-## Contributing
-PRs welcome. If you build something cool on top of this, open a PR or issue.
+- README
+- .env.example
+- setup notes
+- deploy instructions
 
-## License
-MIT
+## 🔗 Connect with an MCP tool
+
+This project works with MCP-compatible AI tools. That means your AI app can use the same memory data structure when the connection is set up.
+
+Typical steps:
+
+1. Open your AI tool
+2. Add the MCP connection settings
+3. Point it to the memory data source
+4. Save the settings
+5. Test the link with a small memory entry
+
+## 🗂️ Example use cases
+
+- Personal AI memory tracker
+- Research note map
+- Project context dashboard
+- Idea graph for writing
+- Study memory board
+- Assistant memory workspace
+- Team knowledge view
+
+## 🧪 Good first test
+
+After setup, check that the dashboard opens and shows your memory nodes. Then try:
+
+- Adding one note
+- Opening one saved item
+- Searching for a term
+- Checking that linked items appear
+- Refreshing the page to confirm data stays saved
+
+## 🔒 Data storage
+
+The app uses Supabase for stored data. That helps keep your memory items in one place and makes them easier to reuse across sessions.
+
+If you host the app with Vercel, the dashboard can stay online and available from your browser.
+
+## 🧰 Troubleshooting
+
+### The page does not open
+- Check that your browser is up to date
+- Make sure the app files finished downloading
+- Try opening the project again from the extracted folder
+
+### The app shows no data
+- Check your Supabase settings
+- Make sure your project keys are correct
+- Confirm that the database tables exist
+
+### The dashboard will not load
+- Refresh the page
+- Try a different browser
+- Check the Vercel deployment settings
+
+### My AI tool does not connect
+- Confirm that your MCP settings are correct
+- Make sure the memory endpoint is reachable
+- Check that the tool supports MCP
+
+## 📁 Repository topics
+
+ai-agent, ai-memory, brain-map, claude, dashboard, mcp, memory-system, open-brain, supabase, vercel
+
+## 📌 Windows file handling tips
+
+- Save the download in a folder you can find
+- Use Extract All if the file is zipped
+- Keep the project folder name unchanged if the setup files expect it
+- Open links in Chrome or Edge
+- Use one browser window for setup tasks
+- Keep your Supabase and Vercel tabs open while you configure the app
+
+## 📄 Files you may see
+
+You may find files and folders such as:
+
+- README.md
+- src
+- app
+- components
+- pages
+- public
+- package.json
+- .env.example
+- vercel.json
+
+These files help define the dashboard, its layout, and its deployment setup
+
+## 🧭 What to do next
+
+1. Visit the GitHub page
+2. Download the repository
+3. Open the project folder on Windows
+4. Review the setup files
+5. Connect Supabase if you want saved data
+6. Deploy with Vercel if you want web access

